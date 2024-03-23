@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'poppins',sans-serif;
+    box-sizing:border-box;
+}
+.container{
+    width:100% ;
+    height: 95vh;
+    background: #e3f9e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculater{
+    background: #3a443a; 
+    padding:20px ;
+    border-radius:15px ;
+}
+.calculater form input{
+    border: 0;
+    outline: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(225,225,225,0.1),5px 5px 15px rgba(0,0,0,0.2);
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+}
+form .display{
+    display: flex;
+    justify-content:flex-end;
+    margin:20px 6;
+}
+form .display input{
+    text-align: right;
+    font-size: 35px;
+    flex: 1;
+    box-shadow:#f45207;
+    background:#0f0f0f4a
+}
+form input.operator{
+    color: #33ffd8;
+}
+form .foundr h4{
+    font-style: italic;
+    color:blanchedalmond;
+}
+form .foundr h6{
+    color: rgb(219, 199, 172);
+    margin: 0 80%;
+}
+
+.Discription h3{
+    font-style: italic;
+    color: #f45207;
+    text-align: center;
+}
+.Discription p{
+    text-align: center;
+}
+.Discription h5{
+    text-align: center;
+}
+/*for small scren*/
+@media only screen and (max-width:365px){
+    .calculater{
+        background: #3a443af5; 
+        padding:10px ;
+        border-radius:15px ;
+    }
+    .calculater form input{
+        border: 0;
+        outline: 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        box-shadow: -8px -8px 15px rgba(225,225,225,0.1),5px 5px 15px rgba(0,0,0,0.2);
+        background: transparent;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+        margin: 10px;
+    }
+    form .display{
+        display: flex;
+        justify-content:flex-end;
+        margin:20px 6;
+    }
+    form .display input{
+        text-align: right;
+        font-size: 35px;
+        flex: 1;
+        box-shadow:#f45207;
+        background:#0f0f0f4a
+    }
+    form input.operator{
+        color: #33ffd8;
+    }
+    .container{
+        width:auto;
+        height: auto;
+        background: #e3f9e3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

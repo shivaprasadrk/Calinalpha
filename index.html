@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater using Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ad6b86e160.js" crossorigin="anonymous"></script>
+</head>
+<script>
+    function sine(){
+        trigonometry.display.value=Math.sin(trigonometry.display.value);
+    }
+    function cosine(){
+        trigonometry.display.value=Math.cos(trigonometry.display.value);
+    }
+    function tangent(){
+        trigonometry.display.value=Math.tan(trigonometry.display.value);
+    }
+    function squareroot(){
+        trigonometry.display.value=Math.sqrt(trigonometry.display.value);
+    }
+    function logarithm(){
+        trigonometry.display.value=Math.log(trigonometry.display.value);
+    }
+    function naturallogarithm(){
+        trigonometry.display.value=Math.log10(trigonometry.display.value);
+    }
+
+</script>
+
+<body >
+    <body class="Discription">
+        <h3>Read Hint before USE</h3>
+        <h5>Hint :-</h5>
+        <p>a-for 0,b-for 1,c-for 2,d-for 3,e-for 4,f-for 5,g-for 6,h-for 7,i-for 8,j-for 9</p>
+        <p>A-for addition,S- for substraction,Md-for modulo,M-for multiplication,€-for equal,P-for pointvalue</p>
+    </body>
+    <div class="container">
+        <div class="calculater">
+            <form action="" name="trigonometry">
+                <div class="foundr">
+                    <h4>L0g!c29</h4>
+                    <h6>INalph@</h6>
+                </div>
+                <div class="display">
+                    <input type="text" name="display">
+                </div>
+                <div>
+                    <input type="button" value="pow" onclick="display.value +='**' "class="operator">
+                    <input type="button" value="sin" onclick="sine()" class="operator" >
+                    <input type="button" value="cos" onclick="cosine()" class="operator" >
+                    <input type="button" value="tan" onclick="tangent()" class="operator" >
+                </div>
+                <div>
+                    <input type="button" value="(" onclick="display.value +='('"class="operator " >
+                    <input type="button" value=")" onclick="display.value +=')'"class="operator ">
+                    <input type="text" value="√" onclick="squareroot()" class="operator">
+                    <input type="text" value="log" onclick="logarithm() " class="operator ">
+
+                </div>
+                <div>    
+                    <input type="button" value="AC" onclick="display.value ='' " class="operator">
+                    <input type="button" value="DE"onclick="display.value = display.value.toString().slice(0,-1)" class="operator">
+                    <input type="button" value="P" onclick="display.value +='.'" class="operator">
+                    <input type="button" value="ln" onclick="naturallogarithm()" class="operator">
+                    
+                </div>
+                <div>
+                    <input type="button" value="h" onclick="display.value +='7' ">
+                    <input type="button" value="i" onclick="display.value +='8' ">
+                    <input type="button" value="j" onclick="display.value +='9' ">
+                    <input type="button" value="M" onclick="display.value +='*' "class="operator">
+                    
+                </div>
+                <div>
+                    <input type="button" value="e" onclick="display.value +='4' ">
+                    <input type="button" value="f" onclick="display.value +='5' ">
+                    <input type="button" value="g" onclick="display.value +='6' "> 
+                    <input type="button" value="S" onclick="display.value +='-' "class="operator">
+                    
+                </div>
+                <div>
+                    <input type="button" value="b" onclick="display.value +='1' ">
+                    <input type="button" value="c" onclick="display.value +='2' ">
+                    <input type="button" value="d" onclick="display.value +='3' ">
+                    <input type="button" value="A" onclick="display.value +='+' "class="operator">
+                    
+                </div>
+                <div>
+                    <input type="button" value="a" onclick="display.value +='0'">
+                    <input type="button" value="D" onclick="display.value +='/'" class="operator">
+                    <input type="button" value="Md" onclick="display.value +='%'"class="operator">
+                    <input type="button" value="€" onclick="display.value=eval(display.value)" class="operator">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0"
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px"
+        }
+    </script>
+</body>
+</html>
